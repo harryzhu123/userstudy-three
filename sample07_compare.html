@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>样本7 三系统对照</title><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><a href="index.html">← 总目录</a></header><main><h1>样本7 · 三系统对照</h1><section class="summary"><h2>用户任务</h2><p>给定一张弧形横幅缠绕在运动看台上的照片，其中有一块弯曲附着的标签，文字扭曲但可恢复。请从这块弯曲表面恢复可读文字，将其替换为 &#x27;LIMITED DROP&#x27;，然后把编辑后的标签补丁重新嵌回原位，使它遵循原始曲率并自然融合：不能变成平面几何，不能有可见接缝，也不能干扰附近装饰元素。</p></section><section class="compare-grid">
+            <article class="system-card">
+              <h3>系统A</h3>
+              <figure class='final-image'><a href='assets/A/sample07/SR_0.jpg' target='_blank'><img src='assets/A/sample07/SR_0.jpg' alt='系统A 最终图'></a><figcaption>系统A 最终图</figcaption></figure>
+              <p><b>工具链：</b>Grounding -&gt; SAM -&gt; Extract -&gt; OCR -&gt; ImageEdit -&gt; Grounding -&gt; SR -&gt; OCR -&gt; Grounding</p>
+              <p><a href="A/sample07.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统B</h3>
+              <figure class='final-image'><a href='assets/B/sample07/Overlayer_0.jpg' target='_blank'><img src='assets/B/sample07/Overlayer_0.jpg' alt='系统B 最终图'></a><figcaption>系统B 最终图</figcaption></figure>
+              <p><b>工具链：</b>Grounding -&gt; SAM -&gt; Extract -&gt; ImageEdit -&gt; Overlayer -&gt; Extract -&gt; Grounding -&gt; SAM -&gt; Extract -&gt; Extract -&gt; Overlayer -&gt; ImageEdit</p>
+              <p><a href="B/sample07.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统C</h3>
+              <figure class='final-image'><a href='assets/C/sample07/ImageEdit_0.jpg' target='_blank'><img src='assets/C/sample07/ImageEdit_0.jpg' alt='系统C 最终图'></a><figcaption>系统C 最终图</figcaption></figure>
+              <p><b>工具链：</b>OCR -&gt; ImageEdit</p>
+              <p><a href="C/sample07.html">查看完整轨迹</a></p>
+            </article>
+            </section><section class="scorecard"><h2>问卷评分建议</h2><p>对系统A、系统B、系统C分别填写：</p><p>结果是否一致：0-10 分；过程是否合理：0-10 分；0=完全不符合/完全不合理，10=完全符合/非常合理。另填写问题类型与备注。</p></section></main></body></html>

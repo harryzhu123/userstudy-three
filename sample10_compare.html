@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>样本10 三系统对照</title><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><a href="index.html">← 总目录</a></header><main><h1>样本10 · 三系统对照</h1><section class="summary"><h2>用户任务</h2><p>给定一张医疗扫描仪图片 img_1 和一张教室投影墙图片 img_2。先识别医疗扫描仪图片的下半部分，提取该区域并叠加到教室投影墙上，要求重叠自然、视觉风格干净且技术化。随后检查更新后的投影墙，如果构图对称性被破坏，就调整叠加区域的位置或尺寸以恢复对称。最后在修改后的投影墙上添加英文标签，标明医疗扫描仪的部件，使画面成为一致的分析图。</p></section><section class="compare-grid">
+            <article class="system-card">
+              <h3>系统A</h3>
+              <figure class='final-image'><a href='assets/A/sample10/ImageEdit_2.jpg' target='_blank'><img src='assets/A/sample10/ImageEdit_2.jpg' alt='系统A 最终图'></a><figcaption>系统A 最终图</figcaption></figure>
+              <p><b>工具链：</b>Grounding -&gt; SAM -&gt; Extract -&gt; Overlayer -&gt; ImageEdit -&gt; OCR -&gt; ImageEdit -&gt; Grounding -&gt; ImageEdit</p>
+              <p><a href="A/sample10.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统B</h3>
+              <figure class='final-image'><a href='assets/B/sample10/Overlayer_3.jpg' target='_blank'><img src='assets/B/sample10/Overlayer_3.jpg' alt='系统B 最终图'></a><figcaption>系统B 最终图</figcaption></figure>
+              <p><b>工具链：</b>Grounding -&gt; SAM -&gt; Extract -&gt; Overlayer -&gt; ImageEdit -&gt; Overlayer -&gt; Overlayer -&gt; Overlayer</p>
+              <p><a href="B/sample10.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统C</h3>
+              <figure class='final-image'><a href='assets/C/sample10/Overlayer_3.jpg' target='_blank'><img src='assets/C/sample10/Overlayer_3.jpg' alt='系统C 最终图'></a><figcaption>系统C 最终图</figcaption></figure>
+              <p><b>工具链：</b>Grounding -&gt; SAM -&gt; Extract -&gt; Overlayer -&gt; Overlayer -&gt; Overlayer -&gt; Overlayer</p>
+              <p><a href="C/sample10.html">查看完整轨迹</a></p>
+            </article>
+            </section><section class="scorecard"><h2>问卷评分建议</h2><p>对系统A、系统B、系统C分别填写：</p><p>结果是否一致：0-10 分；过程是否合理：0-10 分；0=完全不符合/完全不合理，10=完全符合/非常合理。另填写问题类型与备注。</p></section></main></body></html>

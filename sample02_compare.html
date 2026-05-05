@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>样本2 三系统对照</title><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><a href="index.html">← 总目录</a></header><main><h1>样本2 · 三系统对照</h1><section class="summary"><h2>用户任务</h2><p>有三张图：第一张 img_1 是店面照片，真实招牌上有可读文字；第二张 img_2 是可用于重建的干净空白标牌面板；第三张 img_3 是雨天街景，有适合安装标牌的位置。请先从第一张图提取原招牌文字，并准确翻译成西班牙语；然后把翻译后的文字重建到第二张空白面板上，要求清晰、尺寸合适且像真实招牌；最后把重建后的西班牙语标牌插入第三张雨天街景，匹配透视、光照、反射和比例，使它自然安装在环境中。</p></section><section class="compare-grid">
+            <article class="system-card">
+              <h3>系统A</h3>
+              <figure class='final-image'><a href='assets/A/sample02/ImageEdit_2.jpg' target='_blank'><img src='assets/A/sample02/ImageEdit_2.jpg' alt='系统A 最终图'></a><figcaption>系统A 最终图</figcaption></figure>
+              <p><b>工具链：</b>Grounding -&gt; SAM -&gt; Extract -&gt; OCR -&gt; ImageEdit -&gt; Grounding -&gt; ImageEdit -&gt; OCR -&gt; Grounding -&gt; ImageEdit</p>
+              <p><a href="A/sample02.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统B</h3>
+              <figure class='final-image'><a href='assets/B/sample02/Extract_1.jpg' target='_blank'><img src='assets/B/sample02/Extract_1.jpg' alt='系统B 最终图'></a><figcaption>系统B 最终图</figcaption></figure>
+              <p><b>工具链：</b>OCR -&gt; Overlayer -&gt; ImageEdit -&gt; Overlayer -&gt; ImageEdit -&gt; Grounding -&gt; SAM -&gt; Extract -&gt; Grounding -&gt; SAM -&gt; Extract -&gt; Overlayer</p>
+              <p><a href="B/sample02.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统C</h3>
+              <figure class='final-image'><a href='assets/C/sample02/Overlayer_0.jpg' target='_blank'><img src='assets/C/sample02/Overlayer_0.jpg' alt='系统C 最终图'></a><figcaption>系统C 最终图</figcaption></figure>
+              <p><b>工具链：</b>OCR -&gt; ImageGeneration -&gt; Overlayer -&gt; SAM -&gt; Extract -&gt; Overlayer</p>
+              <p><a href="C/sample02.html">查看完整轨迹</a></p>
+            </article>
+            </section><section class="scorecard"><h2>问卷评分建议</h2><p>对系统A、系统B、系统C分别填写：</p><p>结果是否一致：0-10 分；过程是否合理：0-10 分；0=完全不符合/完全不合理，10=完全符合/非常合理。另填写问题类型与备注。</p></section></main></body></html>

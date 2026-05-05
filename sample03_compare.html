@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>样本3 三系统对照</title><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><a href="index.html">← 总目录</a></header><main><h1>样本3 · 三系统对照</h1><section class="summary"><h2>用户任务</h2><p>使用第一张书店外立面图 img_1，只从实体招牌表面提取准确文字，忽略周围立面细节。将提取文字翻译成中文。然后把中文文字放到第二张图 img_2 的干净灯箱表面上，确保在后续步骤前尺寸和对齐都正确。最后把这个重建的中文招牌插入第三张夜间大道场景 img_3，匹配透视、反射和比例，使它自然融入环境。</p></section><section class="compare-grid">
+            <article class="system-card">
+              <h3>系统A</h3>
+              <figure class='final-image'><a href='assets/A/sample03/ImageEdit_3.jpg' target='_blank'><img src='assets/A/sample03/ImageEdit_3.jpg' alt='系统A 最终图'></a><figcaption>系统A 最终图</figcaption></figure>
+              <p><b>工具链：</b>Grounding -&gt; SAM -&gt; Extract -&gt; OCR -&gt; ImageEdit -&gt; Grounding -&gt; ImageEdit -&gt; OCR -&gt; ImageEdit -&gt; Grounding -&gt; ImageEdit</p>
+              <p><a href="A/sample03.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统B</h3>
+              <figure class='final-image'><a href='assets/B/sample03/ImageEdit_3.jpg' target='_blank'><img src='assets/B/sample03/ImageEdit_3.jpg' alt='系统B 最终图'></a><figcaption>系统B 最终图</figcaption></figure>
+              <p><b>工具链：</b>OCR -&gt; Overlayer -&gt; ImageEdit -&gt; Overlayer -&gt; ImageGeneration -&gt; ImageGeneration -&gt; ImageEdit -&gt; ImageGeneration -&gt; ImageEdit -&gt; ImageGeneration -&gt; ImageEdit -&gt; ImageGeneration</p>
+              <p><a href="B/sample03.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统C</h3>
+              <figure class='final-image'><a href='assets/C/sample03/ImageEdit_0.jpg' target='_blank'><img src='assets/C/sample03/ImageEdit_0.jpg' alt='系统C 最终图'></a><figcaption>系统C 最终图</figcaption></figure>
+              <p><b>工具链：</b>OCR -&gt; Overlayer -&gt; ImageEdit</p>
+              <p><a href="C/sample03.html">查看完整轨迹</a></p>
+            </article>
+            </section><section class="scorecard"><h2>问卷评分建议</h2><p>对系统A、系统B、系统C分别填写：</p><p>结果是否一致：0-10 分；过程是否合理：0-10 分；0=完全不符合/完全不合理，10=完全符合/非常合理。另填写问题类型与备注。</p></section></main></body></html>

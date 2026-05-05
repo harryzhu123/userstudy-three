@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>样本12 三系统对照</title><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><a href="index.html">← 总目录</a></header><main><h1>样本12 · 三系统对照</h1><section class="summary"><h2>用户任务</h2><p>给定一张校园公告区图片，其中有公告栏和方向指示牌，二者在晴朗中性天气下都有清晰可读文字。请把整个场景转换成刚被新雪覆盖的样子；然后只恢复公告栏和指示牌上因积雪而变得不可读的文字区域，其他地方仍保留雪效，并避免修复文字边缘出现人工光晕。</p></section><section class="compare-grid">
+            <article class="system-card">
+              <h3>系统A</h3>
+              <figure class='final-image'><a href='assets/A/sample12/ImageEdit_1.jpg' target='_blank'><img src='assets/A/sample12/ImageEdit_1.jpg' alt='系统A 最终图'></a><figcaption>系统A 最终图</figcaption></figure>
+              <p><b>工具链：</b>Grounding -&gt; SAM -&gt; Extract -&gt; ImageEdit -&gt; OCR -&gt; Grounding -&gt; ImageEdit</p>
+              <p><a href="A/sample12.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统B</h3>
+              <figure class='final-image'><a href='assets/B/sample12/Overlayer_2.jpg' target='_blank'><img src='assets/B/sample12/Overlayer_2.jpg' alt='系统B 最终图'></a><figcaption>系统B 最终图</figcaption></figure>
+              <p><b>工具链：</b>Grounding -&gt; SAM -&gt; Extract -&gt; Grounding -&gt; SAM -&gt; Extract -&gt; ImageEdit -&gt; Overlayer -&gt; Overlayer -&gt; Overlayer</p>
+              <p><a href="B/sample12.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统C</h3>
+              <figure class='final-image'><a href='assets/C/sample12/Overlayer_1.jpg' target='_blank'><img src='assets/C/sample12/Overlayer_1.jpg' alt='系统C 最终图'></a><figcaption>系统C 最终图</figcaption></figure>
+              <p><b>工具链：</b>ImageEdit -&gt; Grounding -&gt; Grounding -&gt; SAM -&gt; SAM -&gt; Extract -&gt; Extract -&gt; Overlayer -&gt; Overlayer</p>
+              <p><a href="C/sample12.html">查看完整轨迹</a></p>
+            </article>
+            </section><section class="scorecard"><h2>问卷评分建议</h2><p>对系统A、系统B、系统C分别填写：</p><p>结果是否一致：0-10 分；过程是否合理：0-10 分；0=完全不符合/完全不合理，10=完全符合/非常合理。另填写问题类型与备注。</p></section></main></body></html>

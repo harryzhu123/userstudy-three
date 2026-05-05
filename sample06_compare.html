@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>样本6 三系统对照</title><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><a href="index.html">← 总目录</a></header><main><h1>样本6 · 三系统对照</h1><section class="summary"><h2>用户任务</h2><p>给定一张塑料洗发水瓶照片，侧面弯曲标签上的原始文字扭曲但仍可读。请恢复这块曲面标签上的可读文字，但不要把标签展平成平面，而要尊重它的自然曲率；然后把文字替换为 &#x27;CITY PASS&#x27;，确保新文字沿着原标签的弯曲贴附方式排列。最后把编辑后的标签补丁重新嵌回瓶身，边缘要自然融合，不能有可见接缝或光照不匹配。</p></section><section class="compare-grid">
+            <article class="system-card">
+              <h3>系统A</h3>
+              <figure class='final-image'><a href='assets/A/sample06/ImageEdit_1.jpg' target='_blank'><img src='assets/A/sample06/ImageEdit_1.jpg' alt='系统A 最终图'></a><figcaption>系统A 最终图</figcaption></figure>
+              <p><b>工具链：</b>Grounding -&gt; SAM -&gt; Extract -&gt; OCR -&gt; Grounding -&gt; OCR -&gt; ImageEdit -&gt; Grounding -&gt; OCR -&gt; ImageEdit</p>
+              <p><a href="A/sample06.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统B</h3>
+              <figure class='final-image'><a href='assets/B/sample06/Extract_0.jpg' target='_blank'><img src='assets/B/sample06/Extract_0.jpg' alt='系统B 最终图'></a><figcaption>系统B 最终图</figcaption></figure>
+              <p><b>工具链：</b>Grounding -&gt; Crop -&gt; OCR -&gt; SR -&gt; OCR -&gt; ImageEdit -&gt; Overlayer -&gt; ImageEdit -&gt; Grounding -&gt; SAM -&gt; Extract -&gt; ImageEdit</p>
+              <p><a href="B/sample06.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统C</h3>
+              <figure class='final-image'><a href='assets/C/sample06/Overlayer_0.jpg' target='_blank'><img src='assets/C/sample06/Overlayer_0.jpg' alt='系统C 最终图'></a><figcaption>系统C 最终图</figcaption></figure>
+              <p><b>工具链：</b>OCR -&gt; Grounding -&gt; SAM -&gt; Extract -&gt; ImageGeneration -&gt; Overlayer -&gt; Extract -&gt; Grounding -&gt; SAM -&gt; Extract -&gt; Overlayer</p>
+              <p><a href="C/sample06.html">查看完整轨迹</a></p>
+            </article>
+            </section><section class="scorecard"><h2>问卷评分建议</h2><p>对系统A、系统B、系统C分别填写：</p><p>结果是否一致：0-10 分；过程是否合理：0-10 分；0=完全不符合/完全不合理，10=完全符合/非常合理。另填写问题类型与备注。</p></section></main></body></html>

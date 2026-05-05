@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>样本4 三系统对照</title><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><a href="index.html">← 总目录</a></header><main><h1>样本4 · 三系统对照</h1><section class="summary"><h2>用户任务</h2><p>有三张图：第一张 img_1 是裁剪过的剧院灯牌，标牌文字清晰可恢复；第二张 img_2 是中性海报灯箱，即干净、空白、均匀照明、无文字无标志的标牌面板；第三张 img_3 是夜晚广场场景，其中有明确且合理的位置可以安装标牌，并与光照和透视匹配。请先准确提取原灯牌文字，然后翻译成阿拉伯语；接着在干净灯箱面板上重建完整标牌，要求阿拉伯字体、布局和风格正确；最后把重建标牌插入夜晚广场场景，匹配透视、比例和反射，使它看起来像真实安装在那里。</p></section><section class="compare-grid">
+            <article class="system-card">
+              <h3>系统A</h3>
+              <figure class='final-image'><a href='assets/A/sample04/ImageEdit_2.jpg' target='_blank'><img src='assets/A/sample04/ImageEdit_2.jpg' alt='系统A 最终图'></a><figcaption>系统A 最终图</figcaption></figure>
+              <p><b>工具链：</b>Grounding -&gt; SAM -&gt; Extract -&gt; OCR -&gt; ImageEdit -&gt; Grounding -&gt; ImageEdit -&gt; OCR -&gt; ImageEdit</p>
+              <p><a href="A/sample04.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统B</h3>
+              <figure class='final-image'><a href='assets/B/sample04/SAM_0.jpg' target='_blank'><img src='assets/B/sample04/SAM_0.jpg' alt='系统B 最终图'></a><figcaption>系统B 最终图</figcaption></figure>
+              <p><b>工具链：</b>OCR -&gt; ImageGeneration -&gt; ImageGeneration -&gt; ImageGeneration -&gt; ImageGeneration -&gt; ImageGeneration -&gt; ImageGeneration -&gt; Overlayer -&gt; Overlayer -&gt; Grounding -&gt; SAM -&gt; Extract</p>
+              <p><a href="B/sample04.html">查看完整轨迹</a></p>
+            </article>
+            
+            <article class="system-card">
+              <h3>系统C</h3>
+              <figure class='final-image'><a href='assets/C/sample04/Overlayer_1.jpg' target='_blank'><img src='assets/C/sample04/Overlayer_1.jpg' alt='系统C 最终图'></a><figcaption>系统C 最终图</figcaption></figure>
+              <p><b>工具链：</b>OCR -&gt; ImageGeneration -&gt; Overlayer -&gt; Grounding -&gt; SAM -&gt; Extract -&gt; Overlayer -&gt; Overlayer</p>
+              <p><a href="C/sample04.html">查看完整轨迹</a></p>
+            </article>
+            </section><section class="scorecard"><h2>问卷评分建议</h2><p>对系统A、系统B、系统C分别填写：</p><p>结果是否一致：0-10 分；过程是否合理：0-10 分；0=完全不符合/完全不合理，10=完全符合/非常合理。另填写问题类型与备注。</p></section></main></body></html>
