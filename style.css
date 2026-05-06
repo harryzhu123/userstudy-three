@@ -15,6 +15,10 @@ h3 { margin:0 0 8px; font-size:17px; }
 .compare-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; align-items:start; }
 .sample-card,.system-card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px; }
 .gallery { display:flex; gap:14px; flex-wrap:wrap; align-items:flex-start; }
+.input-images { margin-top:14px; }
+.input-images h3 { margin:0 0 10px; color:var(--ink); }
+.input-gallery figure img { max-width:360px; max-height:300px; }
+.final-badge { display:inline-block; margin-left:6px; padding:2px 7px; border-radius:999px; background:#e8f1ff; color:var(--blue); font-size:12px; font-weight:700; vertical-align:middle; }
 figure { margin:0; background:#fff; border:1px solid var(--line); border-radius:8px; padding:8px; }
 figure img { display:block; max-width:260px; max-height:260px; object-fit:contain; }
 figure.final-image img { max-width:620px; max-height:620px; }
